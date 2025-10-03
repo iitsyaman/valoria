@@ -5,15 +5,10 @@
 </div>
 
 <div align='center'>
-**Valoria** - A modern, powerful TypeScript library for the WhatsApp Web API
+Valoria - A modern, powerful TypeScript library for the WhatsApp Web API
 
 <div align='center'>
-[![npm version](https://img.shields.io/npm/v/@iitsyaman/valoria.svg)](https://www.npmjs.com/package/@iitsyaman/valoria)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-</div>
-</div>
-
----
+[YaMaN]
 
 ## ✨ Introduction
 
