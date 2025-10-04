@@ -433,22 +433,6 @@ await sock.sendMessage(id, { text: "Hello! I'm your AI assistant.", ai: true })
 ```
 
 ## 🧬 Local Encryption — HKDF, AES, PBKDF2
-
-Core functions in `lib/Utils/crypto.*`:
-
-- `hkdf(buffer, expandedLength, { salt?, info? })`  
-  Uses **HKDF-SHA256** via Web Crypto. Returns a Buffer.  
-  Example: `await hkdf(buffer, 32, { salt, info: 'info-string' })`.
-
-- `derivePairingCodeKey(pairingCode, salt)`  
-  Implements PBKDF2-SHA256 with 131,072 iterations and returns 32 bytes.
-
-- `aesEncryptGCM(plaintext, key, iv, additionalData)` / `aesDecryptGCM(...)`  
-  AES-256-GCM encryption/decryption with authentication tag appended to ciphertext.
-
-- `aesEncryptCTR(...)` / `aesDecryptCTR(...)`  
-  AES-CTR, mainly used to wrap/unwrap ephemeral public keys during pairing.
-
 ### Example — HKDF usage
 
 ```javascript
